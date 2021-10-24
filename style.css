@@ -15,6 +15,7 @@ body {
 }
 .calculator {
   width: 500px;
+  height: 700px;
   background-color: light rgb(179, 9, 37); 
   display:flex;
   flex-direction: column;
@@ -57,7 +58,7 @@ body {
 @media (max-width:768px) {
   .display {
     width: 200px;
-    height:300px;
+    height:350px;
 
   }
 .userInput {
@@ -65,7 +66,19 @@ body {
 }
     
 @media (max-width:375px) {
+   
+   }
+     body {
+      display: center;
+      display: flex;
+      justify-content: left;
+      height: 500px;
+      padding-top: 10%;
+      padding-left: 1%;
+      margin: auto;
   
-
-
-}
+  }
+    .display {
+      width: 275px;
+  
+  }
