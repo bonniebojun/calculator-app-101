@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <script src="main.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+  <title>Document</title>
+</head>
+<body>
+  <section class="display">
+  <form class="calculator">
+    <h1>Simple Retro Calculator XOXO</h1>
+    <label for="first-number"></label> 
+    <br>
+  
+    <!-- the "onkeyup" event listener passes its input's "value" to the "saveFirstNumber" function in the main.js file -->
+    <input type="number" id="userInput" name="first-Number" placeholder="type the 1st number" value="" onkeyup="saveFirstNumber(this.value)">
+    <br>
+    <div>
+      <br>
+      <!-- the "onclick" event listener passes its element's "id" to the "changeOperation" function in the main.js file -->
+      <button type="reset">Clear</button>
+      <button type="button" name="add" id="addition" onclick="changeOperation(this.id)">+</button>
+      <button type="button" name="subtract" id="subtraction" onclick="changeOperation(this.id)">-</button>
+      <button type="button" name="multiply" id="multiplication" onclick="changeOperation(this.id)">x</button>
+      <button type="button" name="divide" id="division" onclick="changeOperation(this.id)">/</button>
+      <button type="button" name="modulus" id="modulus" onclick="changeOperation(this.id)">%</button>
+    </div>
+    <br>
+    <label for="second-number"></label>
+    <input type="number" id="userInput" name="second-Number" placeholder="type the 2nd number" onkeyup="saveSecondNumber(this.value)">
+  
+    <br>
+    <button type="button" onclick="equals()">=</button>
+   
+    <br>
+    <div id="result"></div>
+  </form>
+ 
+</section>
+</body>
+</html>
