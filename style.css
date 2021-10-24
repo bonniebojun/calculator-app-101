@@ -1,11 +1,11 @@
 body {
   display: center;
   width: 850px;
+  height: 500px;
   background-color: rgb(247, 199, 199);
   display: flex;
   justify-content: center;
-  height: 650px;
-  padding-top: 10%;
+  padding-top: 5%;
   margin: auto;
 }
   h1 {
@@ -72,13 +72,17 @@ body {
       display: center;
       display: flex;
       justify-content: left;
-      height: 500px;
-      padding-top: 10%;
-      padding-left: 1%;
-      margin: auto;
+      margin-left: 1%;
   
   }
     .display {
-      width: 275px;
+      width: 275px; 
+    
+    }
+      .calculator {
+        width: 200px;
+        height: 300px;
+
   
   }
+}
